@@ -1,4 +1,4 @@
-const API_KEY = "############################";
+####
 const submitIcon = document.querySelector("#submit-icon");
 const inputElement = document.querySelector("input");
 const imageSection = document.querySelector('.images-section')
@@ -13,7 +13,7 @@ const getImages = async () => {
     const options = {
         method: "POST",
         headers: {
-            "Authorization": `Bearer ${API_KEY}`,
+          #####
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -24,7 +24,7 @@ const getImages = async () => {
     };
 
     try {
-        const response = await fetch("https://api.openai.com/v1/images/generations", options);
+        const response = await fetch("https://api.com/v1/images/generations", options);
         
         // Check if response is ok
         if (!response.ok) {
